@@ -3,6 +3,7 @@
  * 而IP，UDP，TCP，只计算首部字段
 */
 
+//由于16位相加可能回产生仅为，所以用32位来保存结果
 
 usigned short checkSum(unsigned short *addr, int len) {
     usigned int sum = 0;
